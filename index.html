@@ -1,11 +1,342 @@
-<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="paint0_linear" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#71E0FF"/>
-      <stop offset="1" stop-color="#8F7DFF"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="112" height="112" rx="28" fill="#08131D"/>
-  <rect x="8" y="8" width="112" height="112" rx="28" stroke="url(#paint0_linear)" stroke-width="4"/>
-  <path d="M40 92V36H57.2L74.2 68.5L91.2 36H108V92H91.2V62.2L75.8 91H72.6L57.2 62.2V92H40Z" fill="url(#paint0_linear)"/>
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="John Manayi Goodness | Backend Engineer & Data Analyst"
+    />
+    <title>John Manayi Goodness | Backend Engineer & Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-blur blur-one"></div>
+    <div class="background-blur blur-two"></div>
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#top" class="brand" aria-label="John Manayi Goodness home">
+          <span class="brand-mark">J</span>
+          <span class="brand-text">John</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="mailto:manayig@gmail.com" class="nav-cta">Email Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Backend Engineer & Data Analyst</p>
+            <h1>
+              Hi, I’m <span class="gradient-text">John Manayi Goodness</span>
+            </h1>
+            <div class="typewriter-wrap">
+              <span class="typewriter-prefix">I’m a</span>
+              <span id="typewriter" class="typewriter-text"></span>
+              <span class="cursor"></span>
+            </div>
+            <p class="hero-description">
+              I design and build scalable APIs with FastAPI, deploy and manage
+              services on AWS, and turn raw data into actionable insights
+              through data analysis and visualization.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Let’s Connect</a>
+            </div>
+
+            <div class="mini-stats">
+              <div>
+                <strong>API</strong>
+                <span>Engineering</span>
+              </div>
+              <div>
+                <strong>AWS</strong>
+                <span>Deployment</span>
+              </div>
+              <div>
+                <strong>Data</strong>
+                <span>Insights</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="profile-card glass">
+              <div class="profile-glow"></div>
+              <div class="avatar-ring">
+                <div class="avatar">
+                  <span>JMG</span>
+                </div>
+              </div>
+              <div class="profile-details">
+                <p class="label">Available for opportunities</p>
+                <h2>Python • FastAPI • AWS</h2>
+                <ul>
+                  <li>Scalable backend systems</li>
+                  <li>Data analysis & visualization</li>
+                  <li>Clean architecture & performance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>Building reliable systems and meaningful insights.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy glass reveal">
+              <p>
+                I’m John Manayi Goodness, a backend engineer and data analyst
+                with a strong foundation in Python. I design and build scalable
+                APIs with FastAPI, deploy and manage services on AWS, and turn
+                raw data into actionable insights through data analysis and
+                visualization.
+              </p>
+              <p>
+                I care about clean architecture, performance, and shipping
+                reliable systems that solve real problems. Whether I’m
+                engineering a backend service or digging through a dataset, I
+                focus on clarity, efficiency, and measurable impact.
+              </p>
+            </div>
+
+            <div class="about-pills reveal">
+              <div class="glass pill-card">
+                <span>Backend Systems</span>
+                <strong>FastAPI • REST APIs</strong>
+              </div>
+              <div class="glass pill-card">
+                <span>Cloud & Deployment</span>
+                <strong>AWS Basics</strong>
+              </div>
+              <div class="glass pill-card">
+                <span>Data & Analysis</span>
+                <strong>Pandas • NumPy • Visualization</strong>
+              </div>
+              <div class="glass pill-card">
+                <span>Workflow</span>
+                <strong>Git • GitHub • Clean Delivery</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and strengths I bring to a project.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card glass reveal">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend</h3>
+              <ul>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>REST APIs</li>
+              </ul>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-icon">☁️</div>
+              <h3>Cloud</h3>
+              <ul>
+                <li>AWS basics</li>
+                <li>Service deployment</li>
+                <li>Infrastructure awareness</li>
+              </ul>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-icon">📊</div>
+              <h3>Data</h3>
+              <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Data analysis & visualization</li>
+              </ul>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-icon">🧰</div>
+              <h3>Tools</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Debugging & collaboration</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects / What I Do</p>
+            <h2>Practical solutions built with clarity and impact.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass reveal">
+              <div class="project-top">
+                <span class="project-tag">API</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3>Scalable API Services</h3>
+              <p>
+                Design and implementation of clean, maintainable API endpoints
+                for business logic, authentication, and data workflows.
+              </p>
+              <ul>
+                <li>FastAPI</li>
+                <li>Validation</li>
+                <li>Performance-focused</li>
+              </ul>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-top">
+                <span class="project-tag">Data</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3>Data Analysis Dashboard</h3>
+              <p>
+                Turning raw business or operational data into actionable
+                insights using Python-driven exploration, cleaning, and
+                visualizations.
+              </p>
+              <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Visualization</li>
+              </ul>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-top">
+                <span class="project-tag">Cloud</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3>AWS Deployment Workflow</h3>
+              <p>
+                Deploying and managing services with a focus on reliability,
+                access control, and efficient production-ready delivery.
+              </p>
+              <ul>
+                <li>Cloud setup</li>
+                <li>Deployment</li>
+                <li>Monitoring</li>
+              </ul>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-top">
+                <span class="project-tag">Strategy</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3>Business Problem Solving</h3>
+              <p>
+                Working across backend logic and analytical insight to solve
+                real-world operational problems in a practical, measurable way.
+              </p>
+              <ul>
+                <li>Architecture</li>
+                <li>Efficiency</li>
+                <li>Impact</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something reliable and useful.</h2>
+          </div>
+
+          <div class="contact-grid reveal">
+            <a
+              class="contact-card glass"
+              href="mailto:manayig@gmail.com"
+              aria-label="Email John"
+            >
+              <span class="contact-icon">✉️</span>
+              <span>Email</span>
+            </a>
+
+            <a
+              class="contact-card glass"
+              href="https://wa.me/23490403572?text=Hi%20John%2C%20I%20saw%20your%20portfolio"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Chat on WhatsApp"
+            >
+              <span class="contact-icon">💬</span>
+              <span>WhatsApp</span>
+            </a>
+
+            <a
+              class="contact-card glass"
+              href="https://github.com/Serenuim"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub profile"
+            >
+              <span class="contact-icon">🐙</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2024 John Manayi Goodness</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
