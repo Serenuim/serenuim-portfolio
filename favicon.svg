@@ -1,233 +1,1455 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of John Manayi Goodness — Backend Engineer, Python Developer, and Data Analyst specializing in FastAPI, AWS, and data-driven engineering."
-    />
-    <title>John Manayi Goodness | Backend Engineer & Data Analyst</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand">
-          <span class="brand-mark">J</span>
-          <span>John Manayi</span>
-        </div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="button ghost" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
-      </header>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71E0FF"/>
+      <stop offset="1" stop-color="#8F7DFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="#08131D"/>
+  <rect x="8" y="8" width="112" height="112" rx="28" stroke="url(#paint0_linear)" stroke-width="4"/>
+  <path d="M40 92V36H57.2L74.2 68.5L91.2 36H108V92H91.2V62.2L75.8 91H72.6L57.2 62.2V92H40Z" fill="url(#paint0_linear)"/>
+</svg>
 
-      <main>
-        <section class="hero reveal">
-          <div class="hero-copy">
-            <p class="eyebrow">Backend Engineer • Python Developer • Data Analyst</p>
-            <h1>
-              Building reliable systems and data-driven solutions that create real value.
-            </h1>
-            <p class="intro">
-              I’m <strong>John Manayi Goodness</strong>, a backend engineer focused on building scalable APIs,
-              cloud-ready services, and practical data solutions with Python. I thrive at the intersection of
-              backend engineering, analytics, and product impact.
-            </p>
-            <div class="cta-group">
-              <a class="button primary" href="#contact">Let’s Connect</a>
-              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
-                View GitHub
-              </a>
-            </div>
-            <ul class="mini-stats">
-              <li><strong>FastAPI</strong><span>APIs</span></li>
-              <li><strong>AWS</strong><span>Cloud</span></li>
-              <li><strong>Python</strong><span>Automation</span></li>
-            </ul>
-          </div>
 
-          <div class="hero-visual">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-            <div class="panel profile-panel">
-              <div class="badge-row">
-                <span class="badge">Backend</span>
-                <span class="badge">Data</span>
-                <span class="badge">Cloud</span>
-              </div>
-              <div class="profile-card">
-                <div class="avatar">JM</div>
-                <div>
-                  <h3>John Manayi Goodness</h3>
-                  <p>Backend Engineer & Analyst</p>
-                </div>
-              </div>
-              <div class="metric-grid">
-                <div>
-                  <span class="metric-label">Focus</span>
-                  <strong>API Design</strong>
-                </div>
-                <div>
-                  <span class="metric-label">Stack</span>
-                  <strong>Python / FastAPI</strong>
-                </div>
-                <div>
-                  <span class="metric-label">Cloud</span>
-                  <strong>AWS</strong>
-                </div>
-                <div>
-                  <span class="metric-label">Insights</span>
-                  <strong>Data Analysis</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="section reveal" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">About Me</p>
-            <h2>Engineering solutions that are robust, scalable, and insight-driven.</h2>
-          </div>
-          <div class="about-grid">
-            <div class="text-card">
-              <p>
-                I am a backend engineer with a strong foundation in Python and practical experience building clean,
-                maintainable API systems with FastAPI. I enjoy transforming business requirements into reliable digital
-                products that are performant, secure, and easy to extend.
-              </p>
-              <p>
-                My work also spans data analysis, where I use Python and analytical thinking to extract insights from
-                raw information, support better decisions, and improve operational workflows. I am especially interested
-                in the intersection of backend architecture, automation, and data-informed engineering.
-              </p>
-            </div>
-            <div class="text-card highlight-card">
-              <h3>Professional Summary</h3>
-              <p>
-                I build backend systems, automate processes, and develop data-driven solutions across application,
-                cloud, and analytics workflows. With experience in FastAPI, Python, AWS, and modern engineering
-                practices, I help organizations turn ideas into reliable digital experiences.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        <section class="section reveal" id="skills">
-          <div class="section-heading">
-            <p class="eyebrow">Core Skills</p>
-            <h2>Technologies I work with.</h2>
-          </div>
-          <div class="skills-grid">
-            <article class="skill-card">
-              <div class="icon">⚙️</div>
-              <h3>Backend Development</h3>
-              <p>Designing scalable APIs, service logic, and clean application architecture with Python and FastAPI.</p>
-            </article>
-            <article class="skill-card">
-              <div class="icon">🐍</div>
-              <h3>Python</h3>
-              <p>Writing efficient scripts, automation workflows, and business logic for seamless system operations.</p>
-            </article>
-            <article class="skill-card">
-              <div class="icon">☁️</div>
-              <h3>AWS</h3>
-              <p>Deploying and supporting cloud-based backend solutions with a focus on reliability and scalability.</p>
-            </article>
-            <article class="skill-card">
-              <div class="icon">📊</div>
-              <h3>Data Analysis</h3>
-              <p>Cleaning, transforming, and interpreting data to uncover trends and guide better decisions.</p>
-            </article>
-            <article class="skill-card">
-              <div class="icon">🧩</div>
-              <h3>System Integration</h3>
-              <p>Connecting services, workflows, and data pipelines to build smarter and more connected products.</p>
-            </article>
-            <article class="skill-card">
-              <div class="icon">🚀</div>
-              <h3>Product Thinking</h3>
-              <p>Aligning engineering decisions with user needs, business priorities, and measurable outcomes.</p>
-            </article>
-          </div>
-        </section>
 
-        <section class="section reveal" id="projects">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Building modern solutions with backend strength and data insight.</h2>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">FastAPI</span>
-                <span class="project-tag alt">AWS</span>
-              </div>
-              <h3>API-Driven Business Platform</h3>
-              <p>
-                Designed and implemented a backend service architecture for handling application logic, secure API
-                access, and scalable integrations across business workflows.
-              </p>
-            </article>
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">Python</span>
-                <span class="project-tag alt">Analytics</span>
-              </div>
-              <h3>Data Insight Automation</h3>
-              <p>
-                Built data processing workflows and analytical scripts to clean datasets, reveal actionable trends, and
-                streamline reporting decisions.
-              </p>
-            </article>
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">Cloud</span>
-                <span class="project-tag alt">DevOps</span>
-              </div>
-              <h3>Deployment & Operations</h3>
-              <p>
-                Worked on production-ready service deployment patterns, cloud hosting, and building resilient systems for
-                real-world use.
-              </p>
-            </article>
-          </div>
-        </section>
 
-        <section class="section contact reveal" id="contact">
-          <div class="contact-card">
-            <div>
-              <p class="eyebrow">Contact</p>
-              <h2>Let’s build something valuable together.</h2>
-            </div>
-            <div class="contact-actions">
-              <a class="button primary" href="mailto:manayig@gmail.com?subject=Portfolio%20Inquiry">manayig@gmail.com</a>
-              <a class="button secondary" href="https://wa.me/234090403572" target="_blank" rel="noreferrer">
-                WhatsApp
-              </a>
-              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
-                GitHub Profile
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(same as old good version)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+n
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+li
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+n
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+n
+
+
+
+
+
+
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+nn
+n
+n
+n
+
+
+
+
+n
+"}]} assigi to=functions.push_files  ensure on last content not broken? Need valid JSON. But huge string maybe too long but okay. However there is an issue: we included weird extra extraneous text after favicon content. That was because I copied huge noise. Not needed. Should be clean. Let's do proper call now with clean strings. Need not too huge but okay. We can use create_or_update_file with simple content. Better maybe use create_or_update_file to overwrite all 3. Since push_files accepts files list; large JSON fine. Need ensure path 

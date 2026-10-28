@@ -1,514 +1,414 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(113, 224, 255, 0.18), transparent 20%),
-    radial-gradient(circle at bottom right, rgba(143, 125, 255, 0.18), transparent 25%),
-    var(--bg);
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-button,
-a {
-  font: inherit;
-}
-
-.page-shell {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px 24px 70px;
-}
-
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 22px 18px;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  backdrop-filter: blur(10px);
-  background: rgba(7, 17, 31, 0.5);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  margin-top: 10px;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  color: #08131d;
-  font-weight: 900;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.nav a {
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.nav a:hover {
-  color: var(--text);
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.9rem 1.3rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button.primary {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #061621;
-  box-shadow: 0 12px 40px rgba(92, 219, 255, 0.35);
-}
-
-.button.secondary,
-.button.ghost {
-  background: rgba(255, 255, 255, 0.02);
-  border-color: var(--line);
-  color: var(--text);
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.9fr;
-  align-items: center;
-  gap: 48px;
-  min-height: 78vh;
-  padding: 56px 0 22px;
-}
-
-.hero-copy {
-  max-width: 670px;
-}
-
-.eyebrow {
-  margin: 0 0 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--primary);
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2.8rem, 5vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.06em;
-}
-
-.intro {
-  font-size: 1.08rem;
-  line-height: 1.75;
-  margin-top: 22px;
-  color: var(--muted);
-  max-width: 620px;
-}
-
-.cta-group {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.mini-stats {
-  list-style: none;
-  padding: 0;
-  margin: 32px 0 0;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.mini-stats li {
-  min-width: 130px;
-  padding: 14px 16px;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.mini-stats strong {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 4px;
-}
-
-.mini-stats span {
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.hero-visual {
-  position: relative;
-  min-height: 520px;
-  display: grid;
-  place-items: center;
-}
-
-.orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(12px);
-  opacity: 0.75;
-  animation: float 8s ease-in-out infinite;
-}
-
-.orb-one {
-  width: 300px;
-  height: 300px;
-  right: 50px;
-  top: 40px;
-  background: radial-gradient(circle, rgba(113, 224, 255, 0.8), rgba(113, 224, 255, 0));
-}
-
-.orb-two {
-  width: 240px;
-  height: 240px;
-  left: 40px;
-  bottom: 10px;
-  background: radial-gradient(circle, rgba(143, 125, 255, 0.75), rgba(143, 125, 255, 0));
-  animation-delay: 1.5s;
-}
-
-.panel {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 430px);
-  background: linear-gradient(180deg, rgba(17, 31, 48, 0.9), rgba(10, 18, 28, 0.86));
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-
-.badge-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
-
-.badge {
-  padding: 8px 12px;
-  border: 1px solid rgba(113, 224, 255, 0.25);
-  background: rgba(113, 224, 255, 0.08);
-  border-radius: 999px;
-  font-size: 0.75rem;
-  color: var(--primary);
-}
-
-.profile-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 18px 0 20px;
-  border-bottom: 1px solid var(--line);
-}
-
-.avatar {
-  width: 72px;
-  height: 72px;
-  display: grid;
-  place-items: center;
-  border-radius: 22px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  color: #08131d;
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
-.profile-card h3 {
-  margin: 0 0 6px;
-  font-size: 1.2rem;
-}
-
-.profile-card p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.metric-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: 16px;
-  padding-top: 22px;
-}
-
-.metric-grid div {
-  padding: 16px 14px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-}
-
-.metric-label {
-  display: block;
-  color: var(--muted);
-  font-size: 0.74rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 8px;
-}
-
-.section {
-  padding-top: 60px;
-}
-
-.section-heading {
-  max-width: 760px;
-  margin-bottom: 30px;
-}
-
-.section-heading h2 {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 3rem);
-  letter-spacing: -0.05em;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  gap: 20px;
-}
-
-.text-card,
-.skill-card,
-.project-card,
-.contact-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 26px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
-}
-
-.text-card p {
-  margin: 0 0 18px;
-  color: var(--muted);
-  line-height: 1.8;
-  font-size: 1.02rem;
-}
-
-.text-card p:last-child {
-  margin-bottom: 0;
-}
-
-.highlight-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.skill-card {
-  min-height: 210px;
-}
-
-.icon {
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-.skill-card h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-}
-
-.skill-card p {
-  margin: 0;
-  line-height: 1.7;
-  color: var(--muted);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  min-height: 230px;
-}
-
-.project-top {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 18px;
-}
-
-.project-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 10px;
-  border-radius: 999px;
-  background: rgba(113, 224, 255, 0.08);
-  color: var(--primary);
-  border: 1px solid rgba(113, 224, 255, 0.2);
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.project-tag.alt {
-  background: rgba(143, 125, 255, 0.08);
-  color: #cabaef;
-  border-color: rgba(143, 125, 255, 0.25);
-}
-
-.project-card h3 {
-  margin: 0 0 12px;
-  font-size: 1.4rem;
-}
-
-.project-card p {
-  margin: 0;
-  line-height: 1.7;
-  color: var(--muted);
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 28px 30px;
-}
-
-.contact-card h2 {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  letter-spacing: -0.05em;
-}
-
-.contact-actions {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-18px);
-  }
-}
-
-@media (max-width: 920px) {
-  .hero,
-  .about-grid,
-  .skills-grid,
-  .projects-grid,
-  .contact-card {
-    grid-template-columns: 1fr;
-    display: grid;
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 38px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .contact-card {
-    padding: 22px;
-  }
-}
-
-@media (max-width: 640px) {
-  .page-shell {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .topbar {
-    padding: 18px 12px;
-  }
-
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .metric-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-actions {
-    width: 100%;
-  }
-
-  .contact-actions .button {
-    width: 100%;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of John Manayi Goodness — Backend Engineer, Python Developer, and Data Analyst specializing in FastAPI, AWS, and data-driven engineering."
+    />
+    <title>John Manayi Goodness | Backend Engineer & Data Analyst</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">J</span>
+          <span>John Manayi</span>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="button ghost" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </header>
+
+      <main>
+        <section class="hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Backend Engineer • Python Developer • Data Analyst</p>
+            <h1>Building reliable systems and data-driven solutions that create real value.</h1>
+            <p class="intro">
+              I’m <strong>John Manayi Goodness</strong>, a backend engineer focused on building scalable APIs,
+              cloud-ready services, and practical data solutions with Python. I thrive at the intersection of
+              backend engineering, analytics, and product impact.
+            </p>
+            <div class="cta-group">
+              <a class="button primary" href="#contact">Let’s Connect</a>
+              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
+                View GitHub
+              </a>
+            </div>
+            <ul class="mini-stats">
+              <li><strong>FastAPI</strong><span>APIs</span></li>
+              <li><strong>AWS</strong><span>Cloud</span></li>
+              <li><strong>Python</strong><span>Automation</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="panel profile-panel">
+              <div class="badge-row">
+                <span class="badge">Backend</span>
+                <span class="badge">Data</span>
+                <span class="badge">Cloud</span>
+              </div>
+
+              <div class="profile-card">
+                <div class="avatar">JM</div>
+                <div>
+                  <h3>John Manayi Goodness</h3>
+                  <p>Backend Engineer & Analyst</p>
+                </div>
+              </div>
+
+              <div class="metric-grid">
+                <div>
+                  <span class="metric-label">Focus</span>
+                  <strong>API Design</strong>
+                </div>
+                <div>
+                  <span class="metric-label">Stack</span>
+                  <strong>Python / FastAPI</strong>
+                </div>
+                <div>
+                  <span class="metric-label">Cloud</span>
+                  <strong>AWS</strong>
+                </div>
+                <div>
+                  <span class="metric-label">Insights</span>
+                  <strong>Data Analysis</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Engineering solutions that are robust, scalable, and insight-driven.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="text-card">
+              <p>
+                I am a backend engineer with a strong foundation in Python and practical experience building clean,
+                maintainable API systems with FastAPI. I enjoy transforming business requirements into reliable digital
+                products that are performant, secure, and easy to extend.
+              </p>
+              <p>
+                My work also spans data analysis, where I use Python and analytical thinking to extract insights from
+                raw information, support better decisions, and improve operational workflows. I’m especially interested
+                in the intersection of backend architecture, automation, and data-informed engineering.
+              </p>
+            </div>
+
+            <div class="text-card highlight-card">
+              <h3>Professional Summary</h3>
+              <p>
+                I build backend systems, automate processes, and develop data-driven solutions across application,
+                cloud, and analytics workflows. With experience in FastAPI, Python, AWS, and modern engineering
+                practices, I help organizations turn ideas into reliable digital experiences.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Core Skills</p>
+            <h2>Technologies I work with.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="icon">⚙️</div>
+              <h3>Backend Development</h3>
+              <p>Designing scalable APIs, service logic, and clean, maintainable application architecture with Python and FastAPI.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon">🐍</div>
+              <h3>Python</h3>
+              <p>Writing efficient scripts, automation workflows, and business logic for seamless system operations.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon">☁️</div>
+              <h3>AWS</h3>
+              <p>Deploying and supporting cloud-based backend solutions with a focus on reliability and scalability.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon">📊</div>
+              <h3>Data Analysis</h3>
+              <p>Cleaning, transforming, and interpreting data to uncover trends and guide better decisions.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon">🧩</div>
+              <h3>System Integration</h3>
+              <p>Connecting services, workflows, and data pipelines to create smarter, more connected products.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon">🚀</div>
+              <h3>Product Thinking</h3>
+              <p>Aligning engineering decisions with user needs, business priorities, and measurable outcomes.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Building modern solutions with backend strength and data insight.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag alt">AWS</span>
+              </div>
+              <h3>API-Driven Business Platform</h3>
+              <p>
+                Designed and implemented a backend service architecture for handling application logic, secure API access,
+                and scalable integrations across business workflows.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">Python</span>
+                <span class="project-tag alt">Analytics</span>
+              </div>
+              <h3>Data Insight Automation</h3>
+              <p>
+                Built data processing workflows and analytical scripts to clean datasets, reveal actionable trends, and
+                streamline reporting decisions.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">Cloud</span>
+                <span class="project-tag alt">Operations</span>
+              </div>
+              <h3>Deployment & Operations</h3>
+              <p>
+                Worked on production-ready deployment patterns and system reliability to support consistent, real-world use.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact reveal" id="contact">
+          <div class="contact-card">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s build something valuable together.</h2>
+            </div>
+
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:manayig@gmail.com?subject=Portfolio%20Inquiry">manayig@gmail.com</a>
+              <a class="button secondary" href="https://wa.me/234090403572" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">GitHub Profile</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
