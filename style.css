@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of John Manayi Goodness — Backend Engineer, Python Developer, and Data Analyst specializing in FastAPI, AWS, and data-driven engineering."
+      content="Portfolio of John Manayi Goodness — Backend Engineer and Data Analyst specializing in Python, FastAPI, AWS, and data-driven engineering."
     />
+    <meta name="theme-color" content="#0b1020" />
     <title>John Manayi Goodness | Backend Engineer & Data Analyst</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,228 +19,271 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand">
-          <span class="brand-mark">J</span>
-          <span>John Manayi</span>
-        </div>
+    <div class="page-bg" aria-hidden="true">
+      <div class="bg-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div id="particles" class="particles"></div>
+    </div>
 
-        <nav class="nav" aria-label="Main navigation">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="John Manayi Home">
+          <span class="brand-mark">J</span>
+          <span class="brand-name">John Manayi</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <a class="button ghost" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
+        <a class="button button-ghost nav-button" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
           GitHub
         </a>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section class="hero reveal">
-          <div class="hero-copy">
-            <p class="eyebrow">Backend Engineer • Python Developer • Data Analyst</p>
-            <h1>Building reliable systems and data-driven solutions that create real value.</h1>
-
-            <p class="intro">
-              I’m <strong>John Manayi Goodness</strong>, a backend engineer focused on building scalable APIs,
-              cloud-ready services, and practical data solutions with Python. I thrive at the intersection of
-              backend engineering, analytics, and product impact.
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Backend Engineer • Data Analyst • Python Developer</p>
+            <h1>
+              I’m John Manayi Goodness
+              <span class="typewriter-wrap">
+                <span class="typewriter" data-type="Backend Engineer,Data Analyst,Python Developer,FastAPI & AWS"></span>
+              </span>
+            </h1>
+            <p class="lead">
+              I design and build scalable APIs with FastAPI, deploy reliable services on AWS, and turn raw data into
+              actionable insights through analysis and visualization. I care about clean architecture, performance, and
+              shipping systems that solve real problems.
             </p>
 
-            <div class="cta-group">
-              <a class="button primary" href="#contact">Let’s Connect</a>
-              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
+            <div class="cta-row">
+              <a class="button button-primary" href="#contact">Let’s Connect</a>
+              <a class="button button-secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
                 View GitHub
               </a>
             </div>
 
-            <ul class="mini-stats">
-              <li><strong>FastAPI</strong><span>APIs</span></li>
-              <li><strong>AWS</strong><span>Cloud</span></li>
-              <li><strong>Python</strong><span>Automation</span></li>
+            <ul class="stats" aria-label="Key specialties">
+              <li>
+                <strong>FastAPI</strong>
+                <span>API systems</span>
+              </li>
+              <li>
+                <strong>AWS</strong>
+                <span>Cloud services</span>
+              </li>
+              <li>
+                <strong>Python</strong>
+                <span>Automation & analysis</span>
+              </li>
             </ul>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-
-            <div class="panel profile-panel">
-              <div class="badge-row">
-                <span class="badge">Backend</span>
-                <span class="badge">Data</span>
-                <span class="badge">Cloud</span>
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="glass-card profile-card">
+              <div class="card-topline">
+                <span class="chip">Backend</span>
+                <span class="chip">Data</span>
+                <span class="chip">Cloud</span>
               </div>
 
-              <div class="profile-card">
+              <div class="profile-row">
                 <div class="avatar">JM</div>
                 <div>
-                  <h3>John Manayi Goodness</h3>
-                  <p>Backend Engineer &amp; Analyst</p>
+                  <h2>John Manayi Goodness</h2>
+                  <p>Backend Engineer &amp; Data Analyst</p>
                 </div>
               </div>
 
-              <div class="metric-grid">
-                <div>
-                  <span class="metric-label">Focus</span>
+              <div class="metrics-grid">
+                <div class="mini-metric">
+                  <span>Focus</span>
                   <strong>API Design</strong>
                 </div>
-                <div>
-                  <span class="metric-label">Stack</span>
+                <div class="mini-metric">
+                  <span>Stack</span>
                   <strong>Python / FastAPI</strong>
                 </div>
-                <div>
-                  <span class="metric-label">Cloud</span>
+                <div class="mini-metric">
+                  <span>Cloud</span>
                   <strong>AWS</strong>
                 </div>
-                <div>
-                  <span class="metric-label">Insights</span>
+                <div class="mini-metric">
+                  <span>Insights</span>
                   <strong>Data Analysis</strong>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section reveal" id="about">
-          <div class="section-heading">
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
             <p class="eyebrow">About Me</p>
-            <h2>Engineering solutions that are robust, scalable, and insight-driven.</h2>
+            <h2>Strong backend thinking, clear data insight, and reliable delivery.</h2>
           </div>
 
           <div class="about-grid">
-            <div class="text-card">
+            <article class="glass-card content-card reveal">
               <p>
-                I am a backend engineer with a strong foundation in Python and practical experience building clean,
-                maintainable API systems with FastAPI. I enjoy transforming business requirements into reliable digital
-                products that are performant, secure, and easy to extend.
+                I’m John Manayi Goodness, a backend engineer and data analyst with a strong foundation in Python.
+                I design and build scalable APIs with FastAPI, deploy and manage services on AWS, and turn raw data
+                into actionable insights through data analysis and visualization.
               </p>
               <p>
-                My work also spans data analysis, where I use Python and analytical thinking to extract insights from
-                raw information, support better decisions, and improve operational workflows. I’m especially interested
-                in the intersection of backend architecture, automation, and data-informed engineering.
+                I care about clean architecture, performance, and shipping reliable systems that solve real problems.
+                Whether I’m engineering a backend service or digging through a dataset, I focus on clarity,
+                efficiency, and measurable impact.
               </p>
-            </div>
+            </article>
 
-            <div class="text-card highlight-card">
-              <h3>Professional Summary</h3>
+            <article class="glass-card content-card reveal accent-card">
+              <h3>What I bring</h3>
               <p>
-                I build backend systems, automate processes, and develop data-driven solutions across application,
-                cloud, and analytics workflows. With experience in FastAPI, Python, AWS, and modern engineering
-                practices, I help organizations turn ideas into reliable digital experiences.
+                End-to-end thinking from system design to data interpretation, with a focus on maintainability,
+                usability, and business value. I enjoy turning technical complexity into practical, dependable systems.
               </p>
-            </div>
+            </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section reveal" id="skills">
-          <div class="section-heading">
-            <p class="eyebrow">Core Skills</p>
-            <h2>Technologies I work with.</h2>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Core technologies and problem-solving capabilities.</h2>
           </div>
 
           <div class="skills-grid">
-            <article class="skill-card">
-              <div class="icon">⚙️</div>
-              <h3>Backend Development</h3>
-              <p>Designing scalable APIs, service logic, and clean application architecture with Python and FastAPI.</p>
+            <article class="glass-card skill-card reveal">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend</h3>
+              <p>Python, FastAPI, REST APIs, application architecture, scalability, and efficient backend design.</p>
             </article>
 
-            <article class="skill-card">
-              <div class="icon">🐍</div>
-              <h3>Python</h3>
-              <p>Writing efficient scripts, automation workflows, and business logic for seamless system operations.</p>
+            <article class="glass-card skill-card reveal">
+              <div class="skill-icon">☁️</div>
+              <h3>Cloud</h3>
+              <p>AWS basics, deployment workflows, cloud-ready service design, and reliable system operations.</p>
             </article>
 
-            <article class="skill-card">
-              <div class="icon">☁️</div>
-              <h3>AWS</h3>
-              <p>Deploying and supporting cloud-based backend solutions with a focus on reliability and scalability.</p>
+            <article class="glass-card skill-card reveal">
+              <div class="skill-icon">📊</div>
+              <h3>Data</h3>
+              <p>Pandas, NumPy, data analysis, visualization, and turning complex data into practical insights.</p>
             </article>
 
-            <article class="skill-card">
-              <div class="icon">📊</div>
-              <h3>Data Analysis</h3>
-              <p>Cleaning, transforming, and interpreting data to uncover trends and guide better decisions.</p>
-            </article>
-
-            <article class="skill-card">
-              <div class="icon">🧩</div>
-              <h3>System Integration</h3>
-              <p>Connecting services, workflows, and data pipelines to build smarter and more connected products.</p>
-            </article>
-
-            <article class="skill-card">
-              <div class="icon">🚀</div>
-              <h3>Product Thinking</h3>
-              <p>Aligning engineering decisions with user needs, business priorities, and measurable outcomes.</p>
+            <article class="glass-card skill-card reveal">
+              <div class="skill-icon">🧰</div>
+              <h3>Tools</h3>
+              <p>Git, GitHub, version control, collaboration workflows, debugging, and clean project hygiene.</p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section reveal" id="projects">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Building modern solutions with backend strength and data insight.</h2>
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>What I build and how I solve real problems.</h2>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">FastAPI</span>
-                <span class="project-tag alt">AWS</span>
+            <article class="glass-card project-card reveal">
+              <div class="project-meta">
+                <span class="mini-tag">FastAPI</span>
+                <span class="mini-tag alt">Backend</span>
               </div>
-              <h3>API-Driven Business Platform</h3>
+              <h3>API Platform</h3>
               <p>
-                Designed and implemented a backend service architecture for handling application logic, secure API
-                access, and scalable integrations across business workflows.
+                Designed and built a clean API service architecture for handling business workflows with performance,
+                maintainability, and secure access in mind.
               </p>
             </article>
 
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">Python</span>
-                <span class="project-tag alt">Analytics</span>
+            <article class="glass-card project-card reveal">
+              <div class="project-meta">
+                <span class="mini-tag">Python</span>
+                <span class="mini-tag alt">Data</span>
               </div>
-              <h3>Data Insight Automation</h3>
+              <h3>Data Insight Dashboard</h3>
               <p>
-                Built data processing workflows and analytical scripts to clean datasets, reveal actionable trends, and
-                streamline reporting decisions.
+                Built analysis workflows that transform raw datasets into readable summaries, charts, and actionable
+                business insights.
               </p>
             </article>
 
-            <article class="project-card">
-              <div class="project-top">
-                <span class="project-tag">Cloud</span>
-                <span class="project-tag alt">Operations</span>
+            <article class="glass-card project-card reveal">
+              <div class="project-meta">
+                <span class="mini-tag">AWS</span>
+                <span class="mini-tag alt">Cloud</span>
               </div>
-              <h3>Deployment &amp; Operations</h3>
+              <h3>Cloud Service Deployment</h3>
               <p>
-                Worked on production-ready deployment patterns and system reliability to support consistent, real-world use.
+                Deployed and supported backend services in a cloud environment with a focus on availability,
+                simplicity, and operational reliability.
+              </p>
+            </article>
+
+            <article class="glass-card project-card reveal">
+              <div class="project-meta">
+                <span class="mini-tag">Automation</span>
+                <span class="mini-tag alt">Tools</span>
+              </div>
+              <h3>Workflow Automation</h3>
+              <p>
+                Automated repetitive tasks and improved processing efficiency through Python scripts, structured logic,
+                and data-driven workflows.
               </p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section contact reveal" id="contact">
-          <div class="contact-card">
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-shell glass-card reveal">
             <div>
               <p class="eyebrow">Contact</p>
               <h2>Let’s build something valuable together.</h2>
             </div>
 
             <div class="contact-actions">
-              <a class="button primary" href="mailto:manayig@gmail.com?subject=Portfolio%20Inquiry">manayig@gmail.com</a>
-              <a class="button secondary" href="https://wa.me/23490403572" target="_blank" rel="noreferrer">WhatsApp</a>
-              <a class="button secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">GitHub Profile</a>
+              <a class="button button-primary" href="mailto:manayig@gmail.com?subject=Portfolio%20Inquiry">Email</a>
+              <a
+                class="button button-secondary"
+                href="https://wa.me/23490403572?text=Hi%20John%2C%20I%20saw%20your%20portfolio"
+                target="_blank"
+                rel="noreferrer"
+              >
+                WhatsApp
+              </a>
+              <a class="button button-secondary" href="https://github.com/Serenuim" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
